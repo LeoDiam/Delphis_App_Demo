@@ -12,13 +12,18 @@
         type: 'line',
         data: {
             labels: [
-                'Monday',
-                'Tuesday',
-                'Wednesday',
-                'Thursday',
-                'Friday',
-                'Saturday',
-                'Sunday'
+                'January',
+                'February',
+                'March',
+                'April',
+                'May',
+                'June',
+                'July',
+                'August',
+                'September',
+                'October',
+                'November',
+                'December'
             ],
             datasets: [{
                 data: [
@@ -27,8 +32,13 @@
                     18483,
                     24003,
                     23489,
-                    24092,
-                    12034
+                    20092,
+                    14034,
+                    15689,
+                    19876,
+                    17456,
+                    16843,
+                    20564
                 ],
                 lineTension: 0.5,
                 backgroundColor: 'transparent',

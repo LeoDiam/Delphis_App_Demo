@@ -150,14 +150,26 @@
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Dashboard</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
-                    <div class="btn-group me-2">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-                    </div>
-                    <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                        <span data-feather="calendar"></span>
-                        This week
-                    </button>
+                    <table class="table-responsive">
+                        <tr>
+                            <div class="btn-group me-2">
+                                <button id="saveButton" type="button" class="btn btn-sm btn-outline-secondary">Save</button>
+                            </div>
+                        </tr>
+                        <tr>
+                            <h5 class="text-black-50 btn-group me-2 ">Export as </h5>
+                        </tr>
+                        <tr>
+                            <div class="btn-group me-2">
+                                <button id="exportButton" type="button" class="btn btn-sm btn-outline-secondary">CSV</button>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="btn-group me-2">
+                                <button id="exportButton1" type="button" class="btn btn-sm btn-outline-secondary">XLS</button>
+                            </div>
+                        </tr>
+                    </table>
                 </div>
             </div>
 
@@ -252,5 +264,6 @@
 <script src="js/feather.min.js"></script>
 <script src="js/Chart.min.js"></script>
 <script src="js/dashboard.js"></script>
+<script src="js/buttonExport.js"></script>
 </body>
 </html>
