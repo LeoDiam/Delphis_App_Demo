@@ -48,7 +48,7 @@
 <body>
 
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Delphis S.A</a>
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -101,6 +101,14 @@
                             Predictions
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                            Help
+                        </a>
+                    </li>
                 </ul>
 
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
@@ -142,20 +150,55 @@
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Report</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
+
+
+
+
+
                     <form>
                         <input type="radio" id="ok" name="ok" required/>
-                        <label for="ok">Technical</label>
+                        <label for="ok">Sales Report</label>
                         <input type="radio" id="ok1" name="ok" required/>
-                        <label for="ok1">Commercial</label>
-                        <input type="radio" id="ok2" name="ok" required/>
-                        <label for="ok">Maintenance</label>
+                        <label for="ok1">Finance Report</label>
+                        <input type="radio" id="ok2" name="ok" checked="checked"required/>
+                        <label for="ok2">Suppliers Report</label>
+                        <input type="radio" id="ok3" name="ok" required/>
+                        <label for="ok3">Partners Report</label>
                     </form>
                 </div>
             </div>
 
-            <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+            <div class="table-responsive">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Legal Form</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option class="text-black-50">Select form below</option>
+                            <option>CIC</option>
+                            <option>CIO</option>
+                            <option>Ltd</option>
+                            <option>Partnership</option>
+                            <option>Public Limited Company</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Client</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea2">Comments</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <br>
+            <div class="table-responsive align-content-center">
+                <h4 class="text-black-50">Report of Suppliers</h4>
+            </div>
+            <canvas class="my-4 w-100" id="myChart" width="1000" height="380"></canvas>
 
-            <h2>Section title</h2>
+
             <div class="table-responsive">
 
             </div>
@@ -168,6 +211,6 @@
 
 <script src="js/feather.min.js"></script>
 <script src="js/Chart.min.js"></script>
-<script src="js/dashboard.js"></script>
+<script src="js/chart_report.js"></script>
 </body>
 </html>

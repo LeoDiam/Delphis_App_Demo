@@ -48,7 +48,7 @@
 <body>
 
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Delphis S.A</a>
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -101,6 +101,14 @@
                             Predictions
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                            Help
+                        </a>
+                    </li>
                 </ul>
 
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
@@ -142,22 +150,120 @@
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Insert your Data</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
-                    <div class="btn-group me-2">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-                    </div>
-                    <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                        <span data-feather="data-feather"></span>
-                        This week
-                    </button>
+                    <table class="table-responsive">
+                        <tr>
+                            <h5 class="text-black-50 btn-group me-2">Export as </h5>
+                        </tr>
+                        <tr>
+                            <div class="btn-group me-2">
+                                <button id="exportButton" type="button" class="btn btn-sm btn-outline-secondary">CSV</button>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="btn-group me-2">
+                                <button id="exportButton1" type="button" class="btn btn-sm btn-outline-secondary">XLS</button>
+                            </div>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <div class="table-responsive">
-                <form>
-<!--                    <input type="radio" name="name" value="1" checked="checked" />-->
-                    <input name="bar" value="" />
-                    <br>
-                    <input name="bar" value="" />
+                <form action="#" method="POST" class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="department" class="col-sm-2 control-label">Category: </label>
+                        <div class="col-sm-10">
+                            <select id="department" name="student_department" class="form-control" required>
+                                <option value="">--- Please choose a department ---</option>
+                                <option value="1">New Project</option>
+                                <option value="2">Edit Project</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="am1" class="col-sm-2 control-label">Peron Responsible: </label>
+                        <div class="col-sm-10">
+                            <input type="text" id="am1" name="student_am" class="form-control" placeholder="Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="am" class="col-sm-2 control-label">Company name: </label>
+                        <div class="col-sm-10">
+                            <input type="text" id="am" name="student_am" class="form-control" placeholder="Name" required>
+                        </div>
+                    </div>
+
+                        <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Project Size: </label>
+                        <div class="col-sm-10">
+                            <input type="text" id="name" name="student_name" class="form-control" placeholder="Size" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname" class="col-sm-2 control-label">Project Cost: </label>
+                        <div class="col-sm-10">
+                            <input type="text" id="surname" name="student_surname" class="form-control" placeholder="Cost" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname1" class="col-sm-2 control-label">Potential Profit: </label>
+                        <div class="col-sm-10">
+                            <input type="text" id="surname1" name="student_surname" class="form-control" placeholder="Profit" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Company's Email: </label>
+                        <div class="col-sm-10">
+                            <input type="email" id="email" name="student_email" class="form-control" placeholder="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-2 control-label">Company's Phone: </label>
+                        <div class="col-sm-10">
+                            <input type="text" id="phone" name="student_phone" class="form-control" placeholder="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Notify Department: </label>
+                        <div class="col-sm-10">
+
+                            <label class="radio-inline">
+                                <input type="radio" name="student_gender" id="inlineRadio1" value="male">Technical
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="student_gender" id="inlineRadio2" value="female">Commercial
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="student_gender" id="inlineRadio3" value="female">Maintenance
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="student_gender" id="inlineRadio4" value="female">Finance
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-2 control-label">Comments: </label>
+                        <div class="col-sm-10">
+
+                            <textarea class="form-control" rows="3" maxlength="200" placeholder="Insert any comments here"></textarea>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <button type="submit" class="btn btn-success">
+                                <span class="glyphicon glyphicon-ok"></span> Save
+                            </button>
+                            <button type="reset" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-remove"></span> Cancel
+                            </button>
+
+                        </div>
+                    </div>
+
                 </form>
             </div>
 
@@ -165,7 +271,10 @@
     </div>
 </div>
 
-
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/buttonExport.js"></script>
+<script src="js/feather.min.js"></script>
+
+<script src="js/chart_predictions.js"></script>
 </body>
 </html>
