@@ -12,13 +12,13 @@
         type: 'line',
         data: {
             labels: [
-                'Sunday',
                 'Monday',
                 'Tuesday',
                 'Wednesday',
                 'Thursday',
                 'Friday',
-                'Saturday'
+                'Saturday',
+                'Sunday'
             ],
             datasets: [{
                 data: [
@@ -30,11 +30,11 @@
                     24092,
                     12034
                 ],
-                lineTension: 0,
+                lineTension: 0.5,
                 backgroundColor: 'transparent',
                 borderColor: '#007bff',
                 borderWidth: 4,
-                pointBackgroundColor: '#007bff'
+                pointBackgroundColor: '#95ff00'
             }]
         },
         options: {
