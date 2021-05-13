@@ -12,30 +12,59 @@
         type: 'line',
         data: {
             labels: [
-                'Monday',
-                'Tuesday',
-                'Wednesday',
-                'Thursday',
-                'Friday',
-                'Saturday',
-                'Sunday'
+                '2014',
+                '2015',
+                '2016',
+                '2017',
+                '2018',
+                '2019',
+                '2020',
+                '2021',
+                '2022',
+                '2023',
+                '2024',
+                '2025',
             ],
             datasets: [{
+                label: "Past",
                 data: [
-                    15339,
+                    17339,
                     21345,
                     18483,
                     24003,
                     23489,
                     24092,
-                    12034
+                    18034
                 ],
                 lineTension: 0.5,
                 backgroundColor: 'transparent',
                 borderColor: '#007bff',
                 borderWidth: 4,
                 pointBackgroundColor: '#95ff00'
-            }]
+            },
+                {
+                    label: "Future",
+                    data: [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        18034,
+                        20345,
+                        21483,
+                        22657,
+                        23903,
+                        25092,
+                    ],
+                    lineTension: 0.5,
+                    backgroundColor: 'transparent',
+                    borderColor: '#ff00d5',
+                    borderWidth: 4,
+                    pointBackgroundColor: '#ff3300'
+                },
+            ]
         },
         options: {
             scales: {
@@ -46,9 +75,12 @@
                 }]
             },
             legend: {
-                display: false
+                display: true,
+                position: 'bottom',
             }
         }
     }
-    )
-})()
+    );
+    myChart.render();
+
+})();

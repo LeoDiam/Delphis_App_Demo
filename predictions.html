@@ -105,7 +105,7 @@
                 </ul>
 
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                    <span>Saved reports</span>
+                    <span>Saved reports & announcements</span>
                     <a class="link-secondary" href="#" aria-label="Add a new report">
                         <span data-feather="plus-circle"></span>
                     </a>
@@ -124,9 +124,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="announcement_delphis.pdf">
                             <span data-feather="file-text"></span>
-                            Social engagement
+                            Last Announcement
                         </a>
                     </li>
                     <li class="nav-item">
@@ -141,19 +141,21 @@
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2">Dashboard</h1>
+                <h1 class="h2">Prediction</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
                     <form>
                         <input type="radio" id="ok" name="ok" required/>
                         <label for="ok">Technical</label>
-                        <input type="radio" id="ok1" name="ok" required/>
+                        <input type="radio" id="ok1" name="ok" checked="checked" required/>
                         <label for="ok1">Commercial</label>
                         <input type="radio" id="ok2" name="ok" required/>
                         <label for="ok">Maintenance</label>
                     </form>
                 </div>
             </div>
-
+            <div class="table-responsive">
+                <h3 align="center"><strong>Auto Created graph of the Sales Process</strong></h3>
+            </div>
             <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
             <h2>Section title</h2>
