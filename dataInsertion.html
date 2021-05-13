@@ -107,28 +107,28 @@
                 </ul>
 
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                    <span>Saved reports & announcements</span>
+                    <span>Saved Reports & Announcements</span>
                     <a class="link-secondary" href="#" aria-label="Add a new report">
                         <span data-feather="plus-circle"></span>
                     </a>
                 </h6>
                 <ul class="nav flex-column mb-2">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="Balance_Sheet.pdf" target="_blank">
                             <span data-feather="file-text"></span>
-                            Current month
+                            Balance Sheet
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="announcement_delphis.pdf" target="_blank">
+                            <span data-feather="file-text"></span>
+                            Last Announcement
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="file-text"></span>
                             Last quarter
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="announcement_delphis.pdf">
-                            <span data-feather="file-text"></span>
-                            Last Announcement
                         </a>
                     </li>
                     <li class="nav-item">
@@ -177,6 +177,13 @@
                     </div>
                     <br>
                     <div class="form-group">
+                        <label for="am1" class="col-sm-2 control-label">Name of the Project: </label>
+                        <div class="col-sm-10">
+                            <input type="text" id="am1" name="student_am" class="form-control" placeholder="Code" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
                         <label for="am1" class="col-sm-2 control-label">Sales Representative: </label>
                         <div class="col-sm-10">
                             <input type="text" id="am1" name="student_am" class="form-control" placeholder="Full Name" required>
@@ -212,7 +219,7 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <label for="email" class="col-sm-2 control-label">Contact Email </label>
+                        <label for="email" class="col-sm-2 control-label">Contact Email: </label>
                         <div class="col-sm-10">
                             <input type="email" id="email" name="student_email" class="form-control" placeholder="Insert email" required>
                         </div>
@@ -268,6 +275,7 @@
                             </label>
                         </div>
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="phone" class="col-sm-2 control-label">Comments: </label>
                         <div class="col-sm-10">
