@@ -158,16 +158,58 @@
             </div>
             <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
-            <h2>Section title</h2>
             <div class="table-responsive">
-                <form>
-                    <input type="radio" id="ok4" name="ok" required/>
-                    <label for="ok4">Technical</label>
-                    <input type="radio" id="ok11" name="ok" required/>
-                    <label for="ok11">Commercial</label>
-                    <input type="radio" id="ok22" name="ok" required/>
-                    <label for="ok22">Maintenance</label>
-                </form>
+                <h3 align="center"><strong>Select the options of the report you would like to have:</strong></h3>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Select reports to calculate: </label>
+                    <div class="col-sm-10">
+                        <label class="radio-inline">
+                            <input type="radio" checked= 'checked' name="student_gender" id="inlineRadio1" value="male"> Sales Report
+                        </label>
+                        <br>
+                        <label class="radio-inline">
+                            <input type="radio" name="student_gender" id="inlineRadio2" value="female"> Financial Report
+                        </label>
+                        <br>
+                        <label class="radio-inline">
+                            <input type="radio" name="student_gender" id="inlineRadio3" value="female"> Suppliers Report
+                        </label>
+                        <br>
+                        <label class="radio-inline">
+                            <input type="radio" name="student_gender" id="inlineRadio4" value="female"> Partners Report
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="department" class="col-sm-2 control-label">Time Horizon Forecast: </label>
+                    <div class="col-sm-10">
+                        <select id="department" name="student_department" class="form-control" required>
+                            <option value="">--- Forecast in Time ---</option>
+                            <option value="1">One Month</option>
+                            <option value="2">Two Months</option>
+                            <option value="3">Three Months</option>
+                            <option value="4">Six Months</option>
+                            <option value="5">One Year</option>
+                            <option value="6">Two Years</option>
+                            <option value="7">Three Years</option>
+                            <option value="8">Four Years</option>
+                            <option value="8">Five Years</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <button type="submit" class="btn btn-success">
+                            <span class="glyphicon glyphicon-ok"></span>Calculate
+                        </button>
+                        <button type="reset" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Cancel
+                        </button>
+
+                    </div>
+                </div>
             </div>
         </main>
     </div>
