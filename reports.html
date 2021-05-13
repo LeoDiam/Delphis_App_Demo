@@ -113,21 +113,21 @@
                 </h6>
                 <ul class="nav flex-column mb-2">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="Balance_Sheet.pdf" target="_blank">
                             <span data-feather="file-text"></span>
-                            Current month
+                            Balance Sheet
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="announcement_delphis.pdf" target="_blank">
+                            <span data-feather="file-text"></span>
+                            Last Announcement
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="file-text"></span>
                             Last quarter
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="announcement_delphis.pdf">
-                            <span data-feather="file-text"></span>
-                            Last Announcement
                         </a>
                     </li>
                     <li class="nav-item">
@@ -144,6 +144,11 @@
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Report</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
+
+
+
+
+
                     <form>
                         <input type="radio" id="ok" name="ok" required/>
                         <label for="ok">Sales Report</label>
@@ -160,20 +165,23 @@
             <div class="table-responsive">
                 <form>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">Legal Form</label>
+                        <label for="exampleFormControlSelect1">Choose the supplier to report</label>
                         <select class="form-control" id="exampleFormControlSelect1">
-                            <option class="text-black-50">Select form below</option>
-                            <option>CIC</option>
-                            <option>CIO</option>
-                            <option>Ltd</option>
-                            <option>Partnership</option>
-                            <option>Public Limited Company</option>
+                            <option class="text-black-50">Select Supplier</option>
+                            <option>Exkalsa</option>
+                            <option>Mitsubishi</option>
+                            <option>Remis</option>
+                            <option>Daikin</option>
+                            <option>Clint</option>
+                            <option>Lennox</option>
                         </select>
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Client</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea2">Comments</label>
                         <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
@@ -187,6 +195,10 @@
             </div>
             <canvas class="my-4 w-100" id="myChart" width="1000" height="380"></canvas>
 
+
+            <div class="table-responsive">
+
+            </div>
         </main>
     </div>
 </div>
