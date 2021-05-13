@@ -16,12 +16,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+    <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
     <meta name="theme-color" content="#7952b3">
 
 
@@ -235,19 +230,19 @@
                         <div class="col-sm-10">
 
                             <label class="radio-inline">
-                                <input type="radio" name="student_gender" id="inlineRadio1" value="male"> Technical Dept.
+                                <input type="radio" name="student_gender" id="inlineRadio11" value="male"> Technical Dept.
                             </label>
                             <br>
                             <label class="radio-inline">
-                                <input type="radio" name="student_gender" id="inlineRadio2" value="female"> Commercial Dept.
+                                <input type="radio" name="student_gender" id="inlineRadio22" value="female"> Commercial Dept.
                             </label>
                             <br>
                             <label class="radio-inline">
-                                <input type="radio" name="student_gender" id="inlineRadio3" value="female"> Maintenance Dept.
+                                <input type="radio" name="student_gender" id="inlineRadio33" value="female"> Maintenance Dept.
                             </label>
                             <br>
                             <label class="radio-inline">
-                                <input type="radio" name="student_gender" id="inlineRadio4" value="female"> Finance Dept.
+                                <input type="radio" name="student_gender" id="inlineRadio44" value="female"> Finance Dept.
                             </label>
                         </div>
                     </div>
@@ -300,11 +295,13 @@
         </main>
     </div>
 </div>
+<!--We need because JS includes icons too-->
+<canvas class="my-4 w-100 visually-hidden" id="myChart" width="1" height="1"></canvas>
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/buttonExport.js"></script>
 <script src="js/feather.min.js"></script>
-
-<script src="js/chart_predictions.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/dashboard.js"></script>
 </body>
 </html>

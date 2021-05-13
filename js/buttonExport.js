@@ -8,8 +8,10 @@ document.getElementById('exportButton1').addEventListener(
         confirm("Please wait... Your file will be exported soon");
     }
 );
-document.getElementById('saveButton').addEventListener(
-    'click', function () {
-        confirm("Please wait... Your file will be saved soon");
-    }
-)
+try {
+    document.getElementById('saveButton').addEventListener(
+        'click', function () {
+            confirm("Please wait... Your file will be saved soon");
+        }
+    );
+} catch (err) {}

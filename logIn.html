@@ -4,8 +4,6 @@
     <title>Sign in</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
-
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/signin.css" rel="stylesheet">
 </head>
@@ -36,7 +34,6 @@
             function login() {
 
                 if (document.getElementById("floatingInput").value == "admin@gmail.com" && document.getElementById("floatingPassword").value == "admin") {
-                    alert("Success.");
                     window.location.replace("dashboard.html");
                 } else {
                     alert("Failure. Use email: admin@gmail.com & password: admin for a free trail.");
